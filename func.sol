@@ -5,4 +5,8 @@ contract Function {
     function returnmany() public pure returns(uint, bool, uint){
         return(1, true, 3);
     }
+    // return value by name
+    function returnbyname() public pure returns(uint x, bool b, uint y) {
+      return (1, true, 3);
+    }
 }
