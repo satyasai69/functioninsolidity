@@ -23,4 +23,12 @@ contract Function {
         (uint _x, uint _y) = (1, 3);
         return (i, b, y, _x, _y);
     }
+    // mapping can not use form input or output
+   //can use array as input
+   function arrayInput(uint[] memory _arr) public {}
+   //can use array as output
+   uint[] public arr;
+   function arrayOutput() public view returns(uint[] memory) {
+     return arr;
+   }
 }
