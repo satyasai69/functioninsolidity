@@ -16,4 +16,11 @@ contract Function {
         b = true;
         y = 2;
     }
+     // Use destructuring assignment when calling another
+    // function that returns multiple values.
+    function destructuringAssignments() public pure returns(uint, bool, uint, uint, uint){
+        (uint i, bool b, uint y) = returnmany();
+        (uint _x, uint _y) = (1, 3);
+        return (i, b, y, _x, _y);
+    }
 }
